@@ -10,7 +10,6 @@ return array(
     'img'      => 'img/lp.gif',
     'version'  => '1.0.0',
     'vendor'   => '670917',
-    'frontend' => true,
     'handlers' =>
         array(
             'frontend_head' => 'handlerFrontendHead'
