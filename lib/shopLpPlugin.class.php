@@ -10,6 +10,11 @@
  */
 class shopLpPlugin extends shopPlugin
 {
+    /**
+     * Обработчик хука frontend_head
+     *
+     * @return string
+     */
     public function handlerFrontendHead()
     {
         $selector = trim($this->getSettings('selector'));
