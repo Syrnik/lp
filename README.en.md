@@ -19,6 +19,10 @@ Install the plugin via **Store → Settings → Plugins** in the Webasyst backen
 |---|---|
 | **Search field selector** | CSS selector of the `<input>` element whose `placeholder` attribute will be animated. Default: `input[name=query]`. Change this if your theme uses a different selector. |
 | **Phrase list** | Hint phrases, one per line. The plugin types them out in the search field one by one and loops indefinitely. Leaving this field empty disables the plugin. |
+| **Minimum typing speed** | Minimum delay between characters in milliseconds. Higher value = slower typing. Default: `80`. |
+| **Maximum typing speed** | Maximum delay between characters in milliseconds. Default: `450`. |
+| **Pause between phrases** | Delay after a phrase is fully typed before the next one begins, ms. Default: `1000`. |
+| **Letter-by-letter erasure** | When enabled, the current phrase is erased character by character before the next one is typed. Disabled by default. |
 
 ## How it works
 
