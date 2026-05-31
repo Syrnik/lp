@@ -30,7 +30,12 @@ class shopLpPlugin extends shopPlugin
             return '';
         }
 
-        $view->assign(compact('selector', 'phrases'));
+        $min_speed = max(1, (int)$this->getSettings('min_speed') ?: 80);
+        $max_speed = max(1, (int)$this->getSettings('max_speed') ?: 450);
+        $pause     = max(0, (int)$this->getSettings('pause') ?: 1000);
+        $erase     = (bool)$this->getSettings('erase');
+
+        $view->assign(compact('selector', 'phrases', 'min_speed', 'max_speed', 'pause', 'erase'));
         return $view->fetch($this->path . '/templates/hooks/frontend_head.html');
     }
 }

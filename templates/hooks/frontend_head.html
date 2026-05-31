@@ -3,19 +3,26 @@
     (function() {
         const r = function() {
             const p = {$phrases|json_encode};
-            const t = theaterJS({ minSpeed:80, maxSpeed:450 });
+            const t = theaterJS({ minSpeed:{$min_speed}, maxSpeed:{$max_speed} });
             t.addActor('searchInput', { accuracy: 0.8, speed: 0.6 }, function (v) {
                 const l = document.querySelectorAll('{$selector|default:'input[name=query]'}');
                 l.forEach(function (e) {
                     e.setAttribute('placeholder', v);
                 })
             });
+{if $erase}
+            for(let i=0;i<p.length;i++) {
+                t.addScene((i===0?'searchInput:':'')+p[i], {$pause});
+                t.addScene('searchInput:');
+            }
+{else}
             t.on('sequence:end', function(){
                 const a = t.getCurrentActor();
                 a.displayValue = '';
             });
             for(let i=0;i<p.length;i++)
-                t.addScene((i===0?'searchInput:':'')+p[i], 1000);
+                t.addScene((i===0?'searchInput:':'')+p[i], {$pause});
+{/if}
             t.addScene(t.replay);
         };
 
