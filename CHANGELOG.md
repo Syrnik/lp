@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.0] - Unreleased
+## [1.1.0] - 2026-05-31
 
 ### Added
 
@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Configurable pause duration between phrases (ms)
 - Optional letter-by-letter erasure before the next phrase is typed
 - Russian (ru_RU) translation of all settings and plugin name
+- Shop-Script Premium compatibility declaration
+
+### Changed
+
+- Dropped IE11 NodeList polyfill; replaced `var` with `const`/`let`
 
 ## [1.0.0] - 2019-06-05
 
