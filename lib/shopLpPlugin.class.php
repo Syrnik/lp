@@ -14,17 +14,17 @@ class shopLpPlugin extends shopPlugin
      * Обработчик хука frontend_head
      *
      * @return string
+     * @throws SmartyException
+     * @throws waException
      */
-    public function handlerFrontendHead()
+    public function handlerFrontendHead(): string
     {
         $selector = trim($this->getSettings('selector'));
 
         $view = wa('shop')->getView();
         $phrases = explode("\n", $this->getSettings('phrases'));
 
-        $phrases = array_filter(array_map(function ($v) {
-            return trim($v);
-        }, $phrases));
+        $phrases = array_filter(array_map(fn($v) => trim($v), $phrases));
 
         if (!$phrases) {
             return '';

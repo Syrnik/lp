@@ -5,8 +5,6 @@
  * @license http://www.webasyst.com/terms/#eula Webasyst
  */
 
-return array(
-    'php'           => array(
-        'version' => '>=5.6.0', 'strict' => true
-    )
-);
+return [
+    'php' => ['version' => '>=7.4.0', 'strict' => true]
+];
