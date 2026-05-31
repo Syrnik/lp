@@ -7,39 +7,39 @@
 
 return [
     'selector'  => [
-        'title'        => 'Селектор поля поиска',
-        'description'  => 'Селектор элемента, у которого надо менять атрибут placeholder',
+        'title'        => 'Search field selector',
+        'description'  => 'CSS selector of the input element whose placeholder attribute will be animated',
         'placeholder'  => 'input[name=query]',
         'control_type' => waHtmlControl::INPUT,
         'value'        => ''
     ],
     'phrases'   => [
-        'title'        => 'Список заменителей',
-        'description'  => 'Одна строка — одна подсказка. Если оставить пустым, то плагин выключится',
+        'title'        => 'Phrase list',
+        'description'  => 'One phrase per line. Leave empty to disable the plugin',
         'control_type' => waHtmlControl::TEXTAREA,
-        'value'        => 'Ищите и обрящите'
+        'value'        => 'Search and you shall find'
     ],
     'min_speed' => [
-        'title'        => 'Минимальная скорость набора',
-        'description'  => 'Минимальная задержка между символами, мс. Больше — медленнее',
+        'title'        => 'Minimum typing speed',
+        'description'  => 'Minimum delay between characters, ms. Higher = slower',
         'control_type' => waHtmlControl::INPUT,
         'value'        => 80
     ],
     'max_speed' => [
-        'title'        => 'Максимальная скорость набора',
-        'description'  => 'Максимальная задержка между символами, мс',
+        'title'        => 'Maximum typing speed',
+        'description'  => 'Maximum delay between characters, ms',
         'control_type' => waHtmlControl::INPUT,
         'value'        => 450
     ],
     'pause'     => [
-        'title'        => 'Пауза между подсказками',
-        'description'  => 'Задержка после полного набора слова, мс',
+        'title'        => 'Pause between phrases',
+        'description'  => 'Delay after a phrase is fully typed, ms',
         'control_type' => waHtmlControl::INPUT,
         'value'        => 1000
     ],
     'erase'     => [
-        'title'        => 'Стирать посимвольно',
-        'description'  => 'Стирать подсказку посимвольно перед показом следующей',
+        'title'        => 'Letter-by-letter erasure',
+        'description'  => 'Erase the current phrase character by character before showing the next one',
         'control_type' => waHtmlControl::CHECKBOX,
         'value'        => 0
     ],
