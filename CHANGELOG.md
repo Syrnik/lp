@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Configurable minimum and maximum typing speed (ms per character)
 - Configurable pause duration between phrases (ms)
 - Optional letter-by-letter erasure before the next phrase is typed
+- Russian (ru_RU) translation of all settings and plugin name
 
 ## [1.0.0] - 2019-06-05
 
