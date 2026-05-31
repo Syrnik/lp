@@ -28,5 +28,6 @@ return array(
     'build',
     'build/*',
     '.git',
-    'src/*'
+    'src/*',
+    'compress-app-plugin.php',
 );
