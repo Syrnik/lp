@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shop/plugins/lp\n"
+"POT-Creation-Date: 2026-05-31 23:11+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: shop/plugins/lp\n"
+"Language-Team: shop/plugins/lp\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: en_US\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+msgid "Live Placeholder"
+msgstr ""
+
+msgid "Search field selector"
+msgstr ""
+
+msgid "CSS selector of the input element whose placeholder attribute will be animated"
+msgstr ""
+
+msgid "Phrase list"
+msgstr ""
+
+msgid "One phrase per line. Leave empty to disable the plugin"
+msgstr ""
+
+msgid "Search and you shall find"
+msgstr ""
+
+msgid "Minimum typing speed"
+msgstr ""
+
+msgid "Minimum delay between characters, ms. Higher = slower"
+msgstr ""
+
+msgid "Maximum typing speed"
+msgstr ""
+
+msgid "Maximum delay between characters, ms"
+msgstr ""
+
+msgid "Pause between phrases"
+msgstr ""
+
+msgid "Delay after a phrase is fully typed, ms"
+msgstr ""
+
+msgid "Letter-by-letter erasure"
+msgstr ""
+
+msgid "Erase the current phrase character by character before showing the next one"
+msgstr ""

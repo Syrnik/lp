@@ -6,7 +6,7 @@
  */
 
 return array(
-    'name'     => 'Live Placeholder',
+    'name'     => /*_wp*/('Live Placeholder'),
     'img'      => 'img/lp.gif',
     'version'  => '1.0.0',
     'vendor'   => '670917',
