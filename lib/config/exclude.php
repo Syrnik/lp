@@ -1,8 +1,11 @@
 <?php
 return array(
     'README.md',
+    'README.en.md',
     'CHANGELOG.md',
     'CONTRIBUTING.md',
+    'LICENSE',
+    'LICENSE_ru',
     'contributors.txt',
     'img/screenshot_*',
     'img/screenshot-*',
@@ -24,5 +27,6 @@ return array(
     'dist/*',
     'build',
     'build/*',
-    '.git'
+    '.git',
+    'src/*'
 );

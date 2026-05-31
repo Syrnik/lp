@@ -5,18 +5,18 @@
  * @license Webasyst
  */
 
-return array(
-    'selector' => array(
+return [
+    'selector' => [
         'title'        => 'Селектор поля поиска',
         'description'  => 'Селектор элемента, у которого надо менять атрибут placeholder',
         'placeholder'  => 'input[name=query]',
         'control_type' => waHtmlControl::INPUT,
         'value'        => ''
-    ),
-    'phrases'  => array(
+    ],
+    'phrases'  => [
         'title'        => 'Список заменителей',
         'description'  => 'Одна строка — одна подсказка. Если оставить пустым, то плагин выключится',
         'control_type' => waHtmlControl::TEXTAREA,
         'value'        => 'Ищите и обрящите'
-    )
-);
+    ]
+];
