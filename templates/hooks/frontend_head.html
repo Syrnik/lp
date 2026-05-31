@@ -1,28 +1,20 @@
 <script src="{$wa_app_static_url}plugins/lp/js/vendors/theater/theater.min.js" defer></script>
 <script>
     (function() {
-        var r = function() {
-            if (window.NodeList && !NodeList.prototype.forEach) {
-                NodeList.prototype.forEach = function (callback, thisArg) {
-                    thisArg = thisArg || window;
-                    for (var i = 0; i < this.length; i++) {
-                        callback.call(thisArg, this[i], i, this);
-                    }
-                };
-            }
-            var p = {$phrases|json_encode};
-            var t = theaterJS({ minSpeed:80, maxSpeed:450 });
+        const r = function() {
+            const p = {$phrases|json_encode};
+            const t = theaterJS({ minSpeed:80, maxSpeed:450 });
             t.addActor('searchInput', { accuracy: 0.8, speed: 0.6 }, function (v) {
-                var l = document.querySelectorAll('{$selector|default:'input[name=query]'}');
+                const l = document.querySelectorAll('{$selector|default:'input[name=query]'}');
                 l.forEach(function (e) {
                     e.setAttribute('placeholder', v);
                 })
             });
             t.on('sequence:end', function(){
-                var a = t.getCurrentActor();
+                const a = t.getCurrentActor();
                 a.displayValue = '';
             });
-            for(var i=0;i<p.length;i++)
+            for(let i=0;i<p.length;i++)
                 t.addScene((i===0?'searchInput:':'')+p[i], 1000);
             t.addScene(t.replay);
         };
