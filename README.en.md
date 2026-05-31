@@ -9,10 +9,6 @@ This plugin animates the placeholder text in your store's search field. Phrases 
 - PHP 7.4 or higher
 - Webasyst Shop-Script
 
-## Installation
-
-Install the plugin via **Store → Settings → Plugins** in the Webasyst backend, or from the [plugin catalog](https://www.webasyst.ru/store/plugin/shop/lp/).
-
 ## Settings
 
 | Setting | Description |
